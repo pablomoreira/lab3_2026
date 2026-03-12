@@ -357,7 +357,108 @@ mi-proyecto-ts/
 ✅ Primer programa funcionando
 
 **Próximo paso:** Comenzar a desarrollar con Node.js y TypeScript
+---
+# Ejercicios Iniciales: TypeScript
 
+## Ejercicio 1: Calculadora Básica
+
+**Objetivo:** Funciones con tipos básicos
+
+**Consigna:**
+Crear 4 funciones que realicen operaciones matemáticas:
+- `sumar(a, b)` → retorna la suma
+- `restar(a, b)` → retorna la resta
+- `multiplicar(a, b)` → retorna el producto
+- `dividir(a, b)` → retorna el cociente (manejar división por cero)
+
+**Requisitos:**
+- Tipear parámetros como `number`
+- Tipear el retorno de cada función
+- Probar cada función con `console.log()`
+
+**Ejemplo de salida esperada:**
+```
+Suma: 15
+Resta: 5
+Multiplicación: 50
+División: 2
+```
+
+---
+
+## Ejercicio 2: Gestión de Estudiantes
+
+**Objetivo:** Interfaces y objetos
+
+**Consigna:**
+Crear una interfaz `Estudiante` con:
+- `nombre` (string)
+- `edad` (number)
+- `carrera` (string)
+- `promedio` (number)
+
+Crear 3 objetos de tipo `Estudiante` y una función `mostrarEstudiante(estudiante)` que imprima la información formateada.
+
+**Requisitos:**
+- Definir la interfaz correctamente
+- Los objetos deben cumplir la interfaz
+- La función debe recibir un `Estudiante` y no retornar nada
+
+**Ejemplo de salida esperada:**
+```
+Nombre: Juan Pérez
+Edad: 22 años
+Carrera: Ingeniería
+Promedio: 8.5
+```
+
+---
+
+## Ejercicio 3: Filtrado de Productos
+
+**Objetivo:** Arrays, tipos y métodos
+
+**Consigna:**
+Crear una interfaz `Producto` con:
+- `id` (number)
+- `nombre` (string)
+- `precio` (number)
+- `stock` (number)
+
+Crear un array de 5 productos y 3 funciones:
+1. `productosDisponibles(productos)` → retorna productos con stock > 0
+2. `productosMayorA(productos, precio)` → retorna productos con precio mayor al indicado
+3. `precioTotal(productos)` → retorna la suma de todos los precios
+
+**Requisitos:**
+- Array tipado: `Producto[]`
+- Usar métodos de array: `filter`, `reduce`
+- Todas las funciones deben estar tipadas
+
+**Ejemplo de salida esperada:**
+```
+Productos disponibles: 4
+Productos mayores a $500: 2
+Precio total: $3250
+```
+
+---
+
+## Entrega
+
+**Formato:** Un archivo `.ts` por ejercicio o uno solo con los 3 ejercicios.
+
+**Compilar y ejecutar:**
+```bash
+tsc ejercicio1.ts
+node ejercicio1.js
+```
+
+**Criterios de evaluación:**
+✓ Código compila sin errores
+✓ Tipos correctamente definidos
+✓ Funciones cumplen los requisitos
+✓ Salida coincide con lo esperado
 ---
 
 ## 📚 Recursos
