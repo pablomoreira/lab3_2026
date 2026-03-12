@@ -332,13 +332,6 @@ npm --version
 - O usar nvm (evita necesidad de sudo)
 
 ---
-**VS Code Flatpak: No encuentra node/npm**
-- Ejecutar: `flatpak override com.visualstudio.code --user --filesystem=host`
-
-**Error "Cannot find module"**
-- Ejecutar: `npm install`
-
----
 
 <!-- _class: lead -->
 ## Estructura de archivos final
