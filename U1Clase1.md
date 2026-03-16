@@ -1,5 +1,5 @@
 ---
-marp: true
+marp: false
 theme: default
 paginate: true
 header: 'Desarrollo Web Full Stack'
@@ -287,32 +287,6 @@ ts-node index.ts
 
 ---
 
-## 🔧 VS Code instalado como Flatpak
-
-Si VS Code está instalado como Flatpak, necesita permisos adicionales para acceder a Node.js:
-
-**Opción A: Usando Flatseal (interfaz gráfica)**
-1. Instalar Flatseal: `flatpak install flathub com.github.tchx84.Flatseal`
-2. Abrir Flatseal
-3. Buscar VS Code
-4. En "Filesystem" activar: `host`, `home`
-
----
-
-## VS Code Flatpak: Configuración por terminal
-
-**Opción B: Por línea de comandos**
-
-```bash
-# Dar acceso completo al sistema de archivos
-flatpak override com.visualstudio.code --user --filesystem=host
-
-# Dar acceso a /usr (donde suelen estar los binarios)
-flatpak override com.visualstudio.code --user --filesystem=/usr
-
-# Reiniciar VS Code
-```
-
 **Verificar que VS Code ve Node.js:**
 Abrir terminal integrada en VS Code y ejecutar:
 ```bash
@@ -356,7 +330,13 @@ mi-proyecto-ts/
 ✅ Proyecto creado
 ✅ Primer programa funcionando
 
-**Próximo paso:** Comenzar a desarrollar con Node.js y TypeScript
+
+**Próximo paso:** Comenzar a desarrollar con Node.js y 
+TypeScript
+---
+
+
+
 ---
 # Ejercicios Iniciales: TypeScript
 
