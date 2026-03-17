@@ -66,7 +66,7 @@ En el  navegador  `http://localhost:3000` y se vera la respuesta.
 **Instalación adicional:**
  
 ```bash
-npm install typescript ts-node @types/node @types/express --save-dev
+npm install typescript tsx @types/node @types/express --save-dev
 ```
  
 El archivo `index.ts`:
@@ -88,7 +88,7 @@ app.listen(3000, () => {
 Para ejecutarlo sin compilar:
  
 ```bash
-npx ts-node index.ts
+npx tsx index.ts
 ```
  
 **Diferencias con la versión JS:**
@@ -101,7 +101,7 @@ npx ts-node index.ts
  Para ejecutarlo sin compilar:
  
 ```bash
-npx ts-node index.ts
+npx tsx index.ts
 ```
  
 **Diferencias con la versión JS:**
